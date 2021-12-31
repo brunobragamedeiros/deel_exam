@@ -11,7 +11,7 @@
   describe('Sign Up Form - Entity Details', () => {
     
   describe('Field: Legal Company Name', () => {
-     it('should show it has an error: companyName = {}', () => {
+     it('should show error: companyName = {}', () => {
       cy.login('in_progress_user_email', 'in_progress_user_password')
       cy.intercept('https://api.deel.training/payments/account').as('accountPage'); //  
       cy.wait("@accountPage");  // wait for the api call above just to be sure that the flow is stable without the usage of fixed timing
@@ -24,7 +24,7 @@
       cy.get("[data-qa='companyName']").click().should('have.class', 'deel-ui__input-component__input deel-ui__input-component__input_placeholder deel-ui__input-component__input_error')
       cy.get("[data-qa='companyName']").click().should('have.css','border-color').and('eq', 'rgb(227, 0, 4)')     })
 
-     it('should show it has an error: companyName is blank', () => {
+     it('should show error: companyName is blank', () => {
       cy.get("[data-qa='companyName']").clear()
       cy.get("[data-qa='next']").click()
       cy.get("[data-qa='companyName']").click().should('have.class', 'deel-ui__input-component__input deel-ui__input-component__input_placeholder deel-ui__input-component__input_error')
