@@ -1,0 +1,15 @@
+{
+    "chromeWebSecurity": false,
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "reportTitle": "DEEL - QA Assigment Report"
+    },
+    "baseUrl": "https://app.deel.training",
+    "defaultCommandTimeout": 12000,
+    "pageLoadTimeout": 120000,
+    "video": false,
+    "retries": {
+        "runMode": 2,
+        "openMode": 2
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "deel_qa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axe-core": "^4.3.5",
+    "cypress": "^9.2.0",
+    "cypress-axe": "^0.13.0",
+    "cypress-mochawesome-reporter": "^2.3.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.0.1"
+  },
+  "scripts": {
+  },
+  "author": "",
+  "license": "ISC"
+}
